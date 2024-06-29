@@ -12,7 +12,7 @@ const Works = () => {
   return (
     <div>
       <main>
-        <section className="works">
+        <section id="Works" className="works">
           <h2 className="works-title">BIZNING ISHLARIMIZ</h2>
           <div className="works-card container">
             <div className="works-card-items">

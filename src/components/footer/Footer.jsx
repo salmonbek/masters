@@ -116,7 +116,7 @@ const Footer = () => {
           <button onClick={handleSubmit}>Yuborish</button>
         </div>
         <h5>
-          AGAR SAYTGA O'Z E'LONINGIZNI JOYLAMOQCHI BO'LSANGIZ SUHBU NO'MERGA
+          AGAR SAYTGA O'Z E'LONINGIZNI JOYLAMOQCHI BO'LSANGIZ USHBU NO'MERGA
           MUROJAT QILING +998906287742
         </h5>
       </div>

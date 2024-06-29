@@ -23,6 +23,13 @@ const Hero = () => {
     };
   }, [images.length]);
 
+  const scrollDown = () => {
+    window.scrollBy({
+      top: 600,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <div className="hero">
@@ -49,10 +56,9 @@ const Hero = () => {
             ustalar, uyingizdagi barcha ta'mirlash va qurilish ishlarini
             bajarish uchun <span className="highlight">bu yerda.</span>
           </p>
-          <a href="#" className="hero-btn">
+          <button className="hero-btn" onClick={scrollDown}>
             BIZNIG ISHLARIMIZ
-          </a>
-          <div className="arrow-down"></div>
+          </button>
         </div>
       </div>
       <Works />

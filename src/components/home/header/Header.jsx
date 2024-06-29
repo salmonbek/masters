@@ -7,6 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
 
   const toggleMobileMenu = () => {
@@ -14,11 +15,12 @@ const Header = () => {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > lastScrollY) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
     }
+    setLastScrollY(window.scrollY);
   };
 
   useEffect(() => {
@@ -26,7 +28,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
