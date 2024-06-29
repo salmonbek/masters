@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Services.scss";
 import videoBg from "../../assets/videos/VIDEO-BG1.mp4";
+import HiTech1 from "../../assets/images/HI-TECH1.jpg";
+import HiTech2 from "../../assets/images/HI-TECH2.jpg";
+import HiTech3 from "../../assets/images/HI-TECH3.jpg";
 import {
   GiAbstract026,
   GiAbstract112,
@@ -35,12 +38,17 @@ const Services = () => {
             SIFATLI VA O'Z ISHIMIZGA ALBATDA JAVOB BERAMIZ, ZAMONAVIY HI TECH
             UYLARINI BIZ BILAN QURING
           </p>
-          <Link to="/contact" className="link">
-            ALOQA
-          </Link>
-          <Link to="#" className="link" onClick={scrollToContent}>
-            KO'PROQ KO'RING
-          </Link>
+          <div className="links">
+            <Link to="/savollar" className="link">
+              SAVOLLAR
+            </Link>
+            <Link to="/contact" className="link">
+              ALOQA
+            </Link>
+            <Link to="#" className="link" onClick={scrollToContent}>
+              KO'PROQ KO'RING
+            </Link>
+          </div>
         </div>
       </div>
       <div className="cards">
@@ -80,6 +88,36 @@ const Services = () => {
           <div className="carousel-card">
             <IoIosColorPalette className="icon" />
             <h5>BO'YOQCHILIK</h5>
+          </div>
+        </div>
+      </div>
+
+      <div className="hi-tech">
+        <h2>RIVOJLANIB KELAYOTGAN HI TECH USULINI TANLANG</h2>
+        <div className="cards container">
+          <div className="hi-tech-card">
+            <img src={HiTech1} alt="hitech" />
+            <p>
+              Agar siz yaltiroq metall, shisha va plastmassaning sovuqligidan
+              zavqlansangiz, zamonaviy texnologiyalarni qadrlasangiz, demak siz
+              haqiqatan ham yuqori texnologiyali uslubning muxlisisiz.
+            </p>
+          </div>
+          <div className="hi-tech-card">
+            <img src={HiTech2} alt="hitech" />
+            <p>
+              Odatda, bu uslubdagi binolar binoning tashqi ko'rinishidagi
+              alyuminiy va po'lat kabi konstruktiv elementlar bilan bog'liq
+              bo'lgan materiallar bilan yaratilgan.
+            </p>
+          </div>
+          <div className="hi-tech-card">
+            <img src={HiTech3} alt="hitech" />
+            <p>
+              Yuqori texnologiyalarda hamma narsa o'ta zamonaviy va
+              funktsionaldir va har bir element eng mayda detallarigacha ishlab
+              chiqilgan.
+            </p>
           </div>
         </div>
       </div>
