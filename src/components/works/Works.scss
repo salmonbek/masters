@@ -1,5 +1,6 @@
 main {
   .works {
+    padding-bottom: 100px;
     background: linear-gradient(
         to left top,
         rgba(86, 217, 250, 0.95) 50%,
@@ -14,6 +15,7 @@ main {
     &-title {
       text-align: center;
       margin: 100px 40px;
+      text-shadow: 1px 1px 4px black;
     }
 
     .works-card {
@@ -43,7 +45,7 @@ main {
 
         h4,
         p {
-          color: rgb(36, 46, 3);
+          color: rgb(119, 152, 11);
           position: absolute;
           bottom: 10%;
           width: 100%;
