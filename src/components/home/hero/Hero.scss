@@ -53,6 +53,10 @@
       font-size: 1.2rem;
       margin-bottom: 40px;
       animation: slideIn 1.5s ease-out;
+
+      .highlight {
+        animation: colorChange 5s ease-in-out infinite;
+      }
     }
 
     .hero-btn {
@@ -101,12 +105,24 @@
   }
 }
 
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  100% {
+    color: rgb(86, 217, 250);
+  }
+}
+
 @media (max-width: 500px) {
   .hero {
     &-content {
       h1 {
-        font-size: 20;
+        font-size: 20px;
         padding: 4px 0px;
+      }
+      a {
+        padding: 12px 24px;
       }
     }
   }

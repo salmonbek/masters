@@ -4,6 +4,8 @@ import Hero2 from "../../../assets/images/hero2.jpg";
 import Hero3 from "../../../assets/images/hero3.jpg";
 import Hero4 from "../../../assets/images/hero4.jpeg";
 import Hero5 from "../../../assets/images/hero5.jpg";
+import { ImHome } from "react-icons/im";
+
 import "./Hero.scss";
 
 const Hero = () => {
@@ -36,14 +38,18 @@ const Hero = () => {
         <div className="hero-content">
           <h1>
             SIZNING UYINGIZ BIZNING USTALARIMIZ QO'LIDA YANGI KO'RINISHGA EGA
-            BO'LADI
+            BO'LADI{" "}
+            <span>
+              <ImHome />
+            </span>
           </h1>
           <p>
-            Eng ishonchli va malakali ustalar, uyingizdagi barcha ta'mirlash va
-            qurilish ishlarini bajarish uchun bu yerda.
+            <span className="highlight">Eng ishonchli</span> va malakali
+            ustalar, uyingizdagi barcha ta'mirlash va qurilish ishlarini
+            bajarish uchun <span className="highlight">bu yerda.</span>
           </p>
           <a href="#" className="hero-btn">
-            Bizning Xizmatlarimizni Ko'ring
+            BIZNIG ISHLARIMIZ
           </a>
           <div className="arrow-down"></div>
         </div>
