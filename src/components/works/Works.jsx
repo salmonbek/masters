@@ -14,6 +14,20 @@ const Works = () => {
       <main>
         <section id="Works" className="works">
           <h2 className="works-title">BIZNING ISHLARIMIZ</h2>
+          <div className="call">
+            <div>
+              <a href="tel:+998770765599"></a>
+            </div>
+            <div>
+              <div>
+                <a href="tel:+998958470997">+998958470997</a>
+              </div>
+              <div>
+                <a href="tel:+998901234567">+998901234567</a>
+              </div>
+              <a href="tel:+998910580702">+998910580702</a>
+            </div>
+          </div>
           <div className="works-card container">
             <div className="works-card-items">
               <img src={HiTech1} alt="hitech image" />

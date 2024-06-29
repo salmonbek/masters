@@ -1,5 +1,14 @@
 main {
   .works {
+    .call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        margin-bottom: 10px;
+        color: rgb(0, 30, 255);
+      }
+    }
     padding-bottom: 100px;
     background: linear-gradient(
         to left top,
