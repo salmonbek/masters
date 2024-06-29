@@ -7,6 +7,7 @@ import Hero5 from "../../../assets/images/hero5.jpg";
 import { ImHome } from "react-icons/im";
 
 import "./Hero.scss";
+import Works from "../../works/Works";
 
 const Hero = () => {
   const images = [Hero1, Hero2, Hero3, Hero4, Hero5];
@@ -54,6 +55,7 @@ const Hero = () => {
           <div className="arrow-down"></div>
         </div>
       </div>
+      <Works />
     </>
   );
 };

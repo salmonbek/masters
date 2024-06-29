@@ -6,91 +6,90 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, top 0.3s ease;
+}
 
-  &.scrolled {
-    transform: translateY(-100%);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow when scrolled */
+.header.scrolled {
+  top: -100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-logo img {
+    width: 60px;
+    height: 50px;
   }
 
-  .nav {
+  &-link {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 50px;
 
-    &-logo img {
-      width: 60px;
-      height: 50px;
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s ease; /* Smooth transition for link color */
+      position: relative; /* Ensure stacking context for backdrop filter */
+      z-index: 1; /* Ensure links are above overlay */
+
+      &:hover {
+        color: rgb(86, 217, 250); /* Highlight color on hover */
+      }
+
+      &.active {
+        color: white; /* Active link color */
+      }
     }
 
-    &-link {
-      display: flex;
-      align-items: center;
-      gap: 50px;
+    @media (max-width: 590px) {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      background-color: rgba(
+        86,
+        217,
+        250,
+        0.95
+      ); /* Semi-transparent background */
+      padding-top: 60px;
+      gap: 20px;
+      z-index: 10;
+
+      &.nav-link-mobile {
+        display: flex;
+      }
 
       a {
-        font-weight: 700;
-        text-decoration: none;
-        color: black;
-        transition: color 0.3s ease; /* Smooth transition for link color */
-        position: relative; /* Ensure stacking context for backdrop filter */
-        z-index: 1; /* Ensure links are above overlay */
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid white;
+        color: black; /* Mobile menu link color */
+        transition: color 0.3s ease;
 
         &:hover {
-          color: rgb(86, 217, 250); /* Highlight color on hover */
-        }
-
-        &.active {
-          color: white; /* Active link color */
-        }
-      }
-
-      @media (max-width: 590px) {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 40%;
-        height: 100%;
-        background-color: rgba(
-          86,
-          217,
-          250,
-          0.95
-        ); /* Semi-transparent background */
-        padding-top: 60px;
-        gap: 20px;
-        z-index: 10;
-
-        &.nav-link-mobile {
-          display: flex;
-        }
-
-        a {
-          padding: 10px 20px;
-          width: 100%;
-          text-align: left;
-          border-bottom: 1px solid white;
-          color: black; /* Mobile menu link color */
-          transition: color 0.3s ease;
-
-          &:hover {
-            color: white; /* Mobile menu link hover color */
-          }
+          color: white; /* Mobile menu link hover color */
         }
       }
     }
+  }
 
-    .nav-icon {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-      z-index: 2; /* Ensure icon is above overlay */
+  .nav-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2; /* Ensure icon is above overlay */
 
-      @media (max-width: 590px) {
-        display: block;
-      }
+    @media (max-width: 590px) {
+      display: block;
     }
   }
 }
