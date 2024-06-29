@@ -40,10 +40,10 @@
     z-index: 2;
     max-width: 800px;
     padding: 10px 60px;
-    backdrop-filter: blur(8px); /* Add backdrop filter blur effect */
+    backdrop-filter: blur(9px); /* Add backdrop filter blur effect */
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 33px;
       font-weight: bold;
       margin-bottom: 20px;
       animation: slideIn 3s ease-out;
@@ -98,5 +98,16 @@
   }
   50% {
     transform: translateY(10px);
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    &-content {
+      h1 {
+        font-size: 20;
+        padding: 4px 0px;
+      }
+    }
   }
 }
