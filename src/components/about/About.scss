@@ -1,12 +1,12 @@
 .about {
-  padding-top: 80px;
+  padding-top: 150px;
 
   .about-hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    gap: 20px;
     .about-hero-left {
       flex: 1;
 
@@ -21,9 +21,15 @@
 
     .about-hero-right {
       flex: 1;
+      display: flex;
+      justify-content: center;
+
       img {
-        width: 100%;
-        height: auto;
+        width: 400px; /* Increased width */
+        height: 400px; /* Increased height */
+        border-radius: 50%; /* Circular shape */
+        object-fit: cover; /* Ensure the image covers the area */
+        object-position: top; /* Focus on the top part of the image */
       }
     }
   }
@@ -95,9 +101,17 @@
         flex-direction: column;
         padding-top: 90px;
         text-align: center;
+
         .about-hero-left {
           h2 {
-            font-size: px;
+            font-size: 24px; /* Adjust the font size for smaller screens */
+          }
+        }
+
+        .about-hero-right {
+          img {
+            width: 250px; /* Adjust the size for smaller screens */
+            height: 250px; /* Adjust the size for smaller screens */
           }
         }
       }

@@ -41,9 +41,6 @@ const Services = () => {
             UYLARINI BIZ BILAN QURING
           </p>
           <div className="links">
-            <Link to="/savollar" className="link">
-              SAVOLLAR
-            </Link>
             <Link to="/contact" className="link">
               ALOQA
             </Link>

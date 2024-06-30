@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import "./About.scss";
-import Hero from "../../assets/images/hero-about.jpg";
+import Hero from "../../assets/images/hero2.jpeg";
 import Team1 from "../../assets/images/team.jpg";
 import Team2 from "../../assets/images/team2.jpg";
 import Team3 from "../../assets/images/team3.jpg";
