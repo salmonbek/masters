@@ -16,6 +16,7 @@ import { FaHandHoldingWater } from "react-icons/fa";
 import { MdMapsHomeWork } from "react-icons/md";
 import { IoIosColorPalette } from "react-icons/io";
 import { Fragment } from "react";
+import Numbers from "../numbers/Numbers";
 
 const Services = () => {
   const scrollToContent = () => {
@@ -121,6 +122,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Numbers />
     </Fragment>
   );
 };
