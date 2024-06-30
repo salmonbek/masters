@@ -1,0 +1,38 @@
+.gallary {
+  padding: 20px;
+  text-align: center;
+
+  h2 {
+    color: #003366; /* Darker shade of blue */
+    margin-bottom: 20px;
+  }
+
+  .gallary-grid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(150px, 1fr)
+    ); /* Increase the min-width to make cards larger */
+    gap: 20px; /* Adjust the gap between cards */
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+
+    img {
+      width: 100%;
+      height: 160px; /* Increase the height of the images */
+      object-fit: cover;
+    }
+
+    .card-description {
+      padding: 15px; /* Increase padding on all sides */
+      font-size: 14px;
+      color: #333;
+    }
+  }
+}

@@ -8,7 +8,7 @@ import Team3 from "../../assets/images/team3.jpg";
 import Team4 from "../../assets/images/team-enjoy2.jpg";
 import Team5 from "../../assets/images/team-enjoy.jpg";
 import Team6 from "../../assets/images/gips-master.jpg";
-import Video2 from "../../assets/videos/baxti-video.mp4"; // Import your video
+import Video2 from "../../assets/videos/baxti-video.mp4";
 
 const About = () => {
   const videoRef = React.useRef(null);

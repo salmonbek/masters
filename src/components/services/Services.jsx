@@ -17,6 +17,7 @@ import { MdMapsHomeWork } from "react-icons/md";
 import { IoIosColorPalette } from "react-icons/io";
 import { Fragment } from "react";
 import Numbers from "../numbers/Numbers";
+import Gallary from "../gallary/Gallary";
 
 const Services = () => {
   const scrollToContent = () => {
@@ -122,7 +123,9 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <div className="images"></div>
       <Numbers />
+      <Gallary />
     </Fragment>
   );
 };
